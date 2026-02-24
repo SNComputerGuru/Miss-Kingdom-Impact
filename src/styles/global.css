@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    background-color: #000;
+    color: #f5f5f5;
+    font-family: Georgia, serif;
+}
+
+h1 h2 h3 {
+    letter-spacing: 0.12em;
+}
+
+section {
+    padding: 6rem 4rem;
+}
+
+button {
+    background: transparent;
+    border: 1px solid #d4af37;
+    color: #d4af37;
+    padding: 1rem 2.5rem;
+    letter-spacing: 0.15em;
+    cursor: pointer;
+}
