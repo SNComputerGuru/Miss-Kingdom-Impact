@@ -1,5 +1,5 @@
-import Header from "./components/Header"
-import Hero from "./components/Hero"
+import Header from "./components/Header";
+import Hero from "./components/Hero";
 // import About from "./components/About"
 // import VisionMission from "./components/VisionMission"
 // import Journey from "./components/Journey"
@@ -8,11 +8,15 @@ import Hero from "./components/Hero"
 
 export default function App() {
     return (
-        <>
+        <div className="App">
             <Header />
-            <div className="App">
-                <Hero />
-            </div>
-        </>
-    )
+            <Hero />
+            {/* Other sections can go here */}
+            {/* <About /> */}
+            {/* <VisionMission /> */}
+            {/* <Journey /> */}
+            {/* <Team /> */}
+            {/* <Footer /> */}
+        </div>
+    );
 }

@@ -2,6 +2,7 @@ html, body {
   margin: 0;
   padding: 0;
   width: 100%;
+  max-width: 100%;
   overflow-x: hidden;
   box-sizing: border-box;
 }
@@ -10,10 +11,9 @@ html, body {
   box-sizing: inherit;
 }
 
-.App {
-  text-align: center;
+#root, .App {
   width: 100%;
-  overflow-x: hidden;
+  min-height: 100vh;
 }
 
 .App-logo {
@@ -38,7 +38,6 @@ html, body {
   font-size: calc(10px + 2vmin);
   color: white;
   width: 100%;
-  padding: 0 1rem;
   box-sizing: border-box;
 }
 

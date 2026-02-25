@@ -11,7 +11,6 @@ export default function Hero() {
                 alignItems: "center",
                 justifyContent: "center",
                 textAlign: "center",
-                overflowX: "hidden"
             }}
         >
             <div
