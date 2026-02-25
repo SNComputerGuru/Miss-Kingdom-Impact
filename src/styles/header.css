@@ -2,11 +2,11 @@ header {
     position: absolute;
     top: 0;
     width: 100%;
-    padding: 10%;
     z-index: 10;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 2rem 4rem;
 }
 
 .logo {
@@ -41,6 +41,11 @@ header {
     body, html, .App {
         overflow-x: hidden;
     }
+
+    header {
+        padding: 10%;
+    }
+
 
     .logo {
         color: #d4af37;
