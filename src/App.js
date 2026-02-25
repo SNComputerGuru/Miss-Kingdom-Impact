@@ -10,7 +10,9 @@ export default function App() {
     return (
         <>
             <Header />
-            <Hero />
+            <div className="App">
+                <Hero />
+            </div>
         </>
     )
 }

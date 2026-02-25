@@ -10,7 +10,8 @@ export default function Hero() {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                textAlign: "center"
+                textAlign: "center",
+                overflowX: "hidden"
             }}
         >
             <div
@@ -21,12 +22,34 @@ export default function Hero() {
                 }}
             ></div>
 
-            <div style={{ position: "relative", zIndex: 2, maxWidth: "700px", padding: "2rem" }}>
-                <h1 style={{ color: "#d4af37", fontSize: "4rem", letterSpacing: "0.18em" }}>
+            <div
+                style={{
+                    position: "relative",
+                    zIndex: 2,
+                    width: "100%",
+                    maxWidth: "100%",
+                    padding: "2rem 1rem",
+                    boxSizing: "border-box"
+                }}
+            >
+                <h1
+                    style={{
+                        color: "#d4af37",
+                        fontSize: "clamp(2rem, 8vw, 4rem)",
+                        letterSpacing: "0.05em",
+                        wordWrap: "break-word"
+                    }}
+                >
                     MISS KINGDOM IMPACT
                 </h1>
-                <p style={{ lineHeight: "1.9", margin: "2rem 0" }}>
-                    A faith rooted movement raising women who lead with purpose integrity and impact
+                <p
+                    style={{
+                        lineHeight: 1.9,
+                        margin: "2rem 0",
+                        fontSize: "clamp(1rem, 4vw, 1.25rem)"
+                    }}
+                >
+                    A faith rooted movement raising women who lead with purpose integrity and impact.
                 </p>
                 <button>REGISTER NOW</button>
             </div>
