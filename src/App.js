@@ -1,10 +1,10 @@
 import Header from "./components/Header"
 import Hero from "./components/Hero"
-import About from "./components/About"
-import VisionMission from "./components/VisionMission"
-import Journey from "./components/Journey"
-import Team from "./components/Team"
-import Footer from "./components/Footer"
+// import About from "./components/About"
+// import VisionMission from "./components/VisionMission"
+// import Journey from "./components/Journey"
+// import Team from "./components/Team"
+// import Footer from "./components/Footer"
 
 export default function App() {
     return (
