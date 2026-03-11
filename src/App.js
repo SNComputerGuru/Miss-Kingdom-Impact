@@ -1,22 +1,31 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-// import About from "./components/About"
-// import VisionMission from "./components/VisionMission"
-// import Journey from "./components/Journey"
-// import Team from "./components/Team"
-// import Footer from "./components/Footer"
+import About from "./components/About";
+import Home from "./components/Home";
+import AboutHomeSection from "./components/AboutHome";
+import Contact from "./components/Contact";
+
 
 export default function App() {
     return (
-        <div className="App">
+        <Router basename="/miss-kingdom-impact">
             <Header />
-            <Hero />
-            {/* Other sections can go here */}
-            {/* <About /> */}
-            {/* <VisionMission /> */}
-            {/* <Journey /> */}
-            {/* <Team /> */}
-            {/* <Footer /> */}
-        </div>
+            <Routes>
+                <Route
+                    path="/"
+                    element={
+                        <>
+                            <Hero />
+                            <Home />
+                            <AboutHomeSection />
+
+                        </>
+                    }
+                />
+                <Route path="/about" element={<About />} />
+                <Route path="/contact" element={<Contact />} />
+            </Routes>
+        </Router>
     );
 }

@@ -1,25 +1,21 @@
-import { useState, useRef, useEffect } from "react"
-import "../styles/header.css"
+import { useState, useRef, useEffect } from "react";
+import { Link } from "react-router-dom";
+import "../styles/header.css";
 
 export default function Header() {
-    const [open, setOpen] = useState(false)
-    const [pageantOpen, setPageantOpen] = useState(false)
-
-    const dropdownRef = useRef(null)
+    const [open, setOpen] = useState(false);
+    const [pageantOpen, setPageantOpen] = useState(false);
+    const dropdownRef = useRef(null);
 
     useEffect(() => {
         function handleClickOutside(event) {
             if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-                setPageantOpen(false)
+                setPageantOpen(false);
             }
         }
-
-        document.addEventListener("mousedown", handleClickOutside)
-
-        return () => {
-            document.removeEventListener("mousedown", handleClickOutside)
-        }
-    }, [])
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => document.removeEventListener("mousedown", handleClickOutside);
+    }, []);
 
     return (
         <>
@@ -29,8 +25,8 @@ export default function Header() {
                 <div className="logo">MISS KINGDOM IMPACT</div>
 
                 <nav className={`nav ${open ? "open" : ""}`}>
-                    <a href="/" onClick={() => setOpen(false)}>HOME</a>
-                    <a href="/about" onClick={() => setOpen(false)}>ABOUT</a>
+                    <Link to="/" onClick={() => setOpen(false)}>HOME</Link>
+                    <Link to="/about" onClick={() => setOpen(false)}>ABOUT</Link>
 
                     <div className="dropdown" ref={dropdownRef}>
                         <button
@@ -41,19 +37,19 @@ export default function Header() {
                         </button>
                         {pageantOpen && (
                             <div className="dropdownMenu">
-                                <a href="/queens" onClick={() => setOpen(false)}>QUEENS</a>
-                                <a href="/miss-philanthropy" onClick={() => setOpen(false)}>MISS PHILANTHROPY</a>
-                                <a href="/nigeria" onClick={() => setOpen(false)}>NIGERIA</a>
-                                <a href="/registration" onClick={() => setOpen(false)}>REGISTRATION</a>
-                                <a href="/vote" onClick={() => setOpen(false)}>VOTE</a>
+                                <Link to="/queens" onClick={() => setOpen(false)}>QUEENS</Link>
+                                <Link to="/miss-philanthropy" onClick={() => setOpen(false)}>MISS KINGDOM IMPACT</Link>
+                                <Link to="/nigeria" onClick={() => setOpen(false)}>SOUTH AFRICA</Link>
+                                <Link to="/registration" onClick={() => setOpen(false)}>REGISTRATION</Link>
+                                <Link to="/vote" onClick={() => setOpen(false)}>VOTE</Link>
                             </div>
                         )}
                     </div>
 
-                    <a href="/sponsors" onClick={() => setOpen(false)}>SPONSORS</a>
-                    <a href="/gallery" onClick={() => setOpen(false)}>GALLERY</a>
-                    <a href="/blog" onClick={() => setOpen(false)}>BLOG</a>
-                    <a href="/contact" onClick={() => setOpen(false)}>CONTACT</a>
+                    <Link to="/sponsors" onClick={() => setOpen(false)}>SPONSORS</Link>
+                    <Link to="/gallery" onClick={() => setOpen(false)}>GALLERY</Link>
+                    <Link to="/blog" onClick={() => setOpen(false)}>BLOG</Link>
+                    <Link to="/contact" onClick={() => setOpen(false)}>CONTACT</Link>
                 </nav>
 
                 <button className="menuButton" onClick={() => setOpen(!open)}>
@@ -61,5 +57,5 @@ export default function Header() {
                 </button>
             </header>
         </>
-    )
+    );
 }
