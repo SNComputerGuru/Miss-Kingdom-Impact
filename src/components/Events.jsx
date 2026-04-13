@@ -1,9 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import "../styles/events.css";
 
 export default function Events() {
-    const [active, setActive] = useState(null);
-
     const events = [
         {
             title: "Leadership Workshops",
@@ -32,16 +30,10 @@ export default function Events() {
                     {events.map((event, index) => (
                         <div
                             key={index}
-                            className={`eventCard ${active === index ? "active" : ""}`}
-                            onClick={() => setActive(active === index ? null : index)}
+                            className="eventCard"
                         >
                             <h3>{event.title}</h3>
-
-                            {active === index && (
-                                <p className="eventContent">
-                                    {event.content}
-                                </p>
-                            )}
+                            <p className="eventContent">{event.content}</p>
                         </div>
                     ))}
                 </div>
