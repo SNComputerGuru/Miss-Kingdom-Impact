@@ -22,7 +22,9 @@ export default function Header() {
             {open && <div className="backdrop" onClick={() => setOpen(false)}></div>}
 
             <header className="header">
-                <div className="logo">MISS KINGDOM IMPACT</div>
+                <Link to="/" style={{ textDecoration: "none" }}>
+                    <div className="logo">MISS KINGDOM IMPACT</div>
+                </Link>
 
                 <nav className={`nav ${open ? "open" : ""}`}>
                     <Link to="/" onClick={() => setOpen(false)}>HOME</Link>
