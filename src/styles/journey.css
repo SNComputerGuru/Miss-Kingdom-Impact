@@ -1,4 +1,4 @@
-.aboutSection {
+.journeySection {
     width: 100%;
     min-height: 70vh;
     display: flex;
@@ -11,59 +11,32 @@
     text-align: center;
 }
 
-.aboutSection h2 {
+.journeySection h2 {
     color: #d4af37;
-    font-size: clamp(2rem, 6vw, 3.5rem);
+    font-size: clamp(2rem, 4vw, 3.5rem);
     letter-spacing: 0.05em;
     margin-bottom: 1.5rem;
     text-shadow: 0 0 10px rgba(0,0,0,0.7);
 }
 
-.aboutSection p {
+.journeyList {
+    margin: 2rem 0;
+    text-align: left;
+    display: inline-block;
+}
+
+.journeyList p {
     max-width: 800px;
     font-size: clamp(1rem, 2vw, 1.25rem);
     line-height: 1.8;
     margin-bottom: 1rem;
-    color: white;
-}
+    color: white;}
 
-.values p {
-    margin: 0.5rem 0;
-    font-weight: 600;
-    font-size: 1.2rem;
-    color: #ffffff;
-}
-
-.aboutBlock {
-    margin: 2rem 0;
-}
-
-.ourStory {
-    background-color: #0c0c0c;
-}
-
-.ourMission {
-    background-color: #0c0c0c;
-}
-
-/*----------------*/
-
-.foundersMessage {
+/*------------------*/
+.journeySection {
     max-width: 800px;
     margin: 0 auto;
     padding: 4rem 2rem;
     line-height: 1.9;
     font-size: 1.05rem;
-    background-color: #0c0c0c;
-
-}
-
-.foundersMessage h2 {
-    color: #d4af37;
-    margin-bottom: 2rem;
-    letter-spacing: 0.1em;
-}
-
-.foundersMessage p {
-    margin-bottom: 1.5rem;
 }

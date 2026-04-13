@@ -1,0 +1,53 @@
+.eventsPage {
+    padding: 6rem 2rem;
+    text-align: center;
+}
+
+.ourEvents h2 {
+    color: #d4af37;
+    letter-spacing: 0.1em;
+    margin-bottom: 3rem;
+}
+
+.eventsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+.eventCard {
+    border: 1px solid #d4af37;
+    padding: 2rem 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.eventCard h3 {
+    letter-spacing: 0.1em;
+    font-size: 1rem;
+}
+
+
+.eventCard:hover {
+    background: rgba(212, 175, 55, 0.1);
+}
+
+.eventCard.active {
+    background: #d4af37;
+    color: #000;
+}
+
+
+.eventContent {
+    margin-top: 1.5rem;
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+.eventsNote {
+    margin-top: 3rem;
+    opacity: 0.8;
+}

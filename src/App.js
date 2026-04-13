@@ -5,6 +5,10 @@ import About from "./components/About";
 import Home from "./components/Home";
 import AboutHomeSection from "./components/AboutHome";
 import Contact from "./components/Contact";
+import Blog from "./components/Blog";
+import Journey from "./components/Journey";
+import Partners from "./components/Partners";
+import Events from "./components/Events";
 
 
 export default function App() {
@@ -25,6 +29,10 @@ export default function App() {
                 />
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
+                <Route path="/blog" element={<Blog />} />
+                <Route path="/journey" element={<Journey />} />
+                <Route path="/partners" element={<Partners />} />
+                <Route path="/events" element={<Events />} />
             </Routes>
         </Router>
     );

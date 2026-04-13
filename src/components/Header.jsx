@@ -26,7 +26,6 @@ export default function Header() {
 
                 <nav className={`nav ${open ? "open" : ""}`}>
                     <Link to="/" onClick={() => setOpen(false)}>HOME</Link>
-                    <Link to="/about" onClick={() => setOpen(false)}>ABOUT</Link>
 
                     <div className="dropdown" ref={dropdownRef}>
                         <button
@@ -37,19 +36,22 @@ export default function Header() {
                         </button>
                         {pageantOpen && (
                             <div className="dropdownMenu">
+                                <Link to="/journey" onClick={() => setOpen(false)}>THE MKI JOURNEY</Link>
                                 <Link to="/queens" onClick={() => setOpen(false)}>QUEENS</Link>
                                 <Link to="/miss-philanthropy" onClick={() => setOpen(false)}>MISS KINGDOM IMPACT</Link>
-                                <Link to="/nigeria" onClick={() => setOpen(false)}>SOUTH AFRICA</Link>
                                 <Link to="/registration" onClick={() => setOpen(false)}>REGISTRATION</Link>
                                 <Link to="/vote" onClick={() => setOpen(false)}>VOTE</Link>
                             </div>
                         )}
                     </div>
 
-                    <Link to="/sponsors" onClick={() => setOpen(false)}>SPONSORS</Link>
+                    <Link to="/events" onClick={() => setOpen(false)}>EVENTS</Link>
                     <Link to="/gallery" onClick={() => setOpen(false)}>GALLERY</Link>
+                    <Link to="/sponsors" onClick={() => setOpen(false)}>SPONSORS</Link>
                     <Link to="/blog" onClick={() => setOpen(false)}>BLOG</Link>
+                    <Link to="/about" onClick={() => setOpen(false)}>ABOUT</Link>
                     <Link to="/contact" onClick={() => setOpen(false)}>CONTACT</Link>
+
                 </nav>
 
                 <button className="menuButton" onClick={() => setOpen(!open)}>

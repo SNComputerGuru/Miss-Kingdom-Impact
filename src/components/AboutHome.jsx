@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import "../styles/aboutHomeSection.css";
 
 export default function AboutHomeSection() {
@@ -50,9 +51,9 @@ export default function AboutHomeSection() {
                 </ul>
             </div>
 
-            <div className="homeBlock callToAction">
+            <Link to="/partners">
                 <button className="homeButton">Become a Partner</button>
-            </div>
+            </Link>
 
         </div>
     );

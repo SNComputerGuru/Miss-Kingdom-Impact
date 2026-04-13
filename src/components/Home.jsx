@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/home.css";
+import {Link} from "react-router-dom";
 
 
 export default function Home() {
@@ -12,7 +13,9 @@ export default function Home() {
                     purpose-driven women who lead with integrity, serve with compassion, and walk
                     boldly in their God-given identity.
                 </p>
-                <button className="homeButton">Partner With Us</button>
+                <Link to="/partners">
+                    <button className="homeButton">Become a Partner</button>
+                </Link>
             </div>
 
         </section>
