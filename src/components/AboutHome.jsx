@@ -41,19 +41,16 @@ export default function AboutHomeSection() {
 
             <div className="homeBlock impactInAction">
                 <h2>Impact In Action</h2>
-                <p>We are committed to:</p>
+
                 <ul>
-                    <li>Youth mentorship initiatives</li>
+                    <p>We are committed to:</p>
+                    <li>Mentorship initiatives</li>
                     <li>Women empowerment programs</li>
                     <li>School and community outreach</li>
                     <li>Faith-based conferences</li>
                     <li>Philanthropic partnerships</li>
                 </ul>
             </div>
-
-            <Link to="/partners">
-                <button className="homeButton">Become a Partner</button>
-            </Link>
 
         </div>
     );

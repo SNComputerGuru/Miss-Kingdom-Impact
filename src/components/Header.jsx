@@ -40,7 +40,6 @@ export default function Header() {
                             <div className="dropdownMenu">
                                 <Link to="/journey" onClick={() => setOpen(false)}>THE MKI JOURNEY</Link>
                                 <Link to="/queens" onClick={() => setOpen(false)}>QUEENS</Link>
-                                <Link to="/miss-philanthropy" onClick={() => setOpen(false)}>MISS KINGDOM IMPACT</Link>
                                 <Link to="/registration" onClick={() => setOpen(false)}>REGISTRATION</Link>
                                 <Link to="/vote" onClick={() => setOpen(false)}>VOTE</Link>
                             </div>

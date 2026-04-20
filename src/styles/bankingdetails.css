@@ -1,0 +1,73 @@
+.bankingDetailsSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bankingDetailsCard {
+    width: 100%;
+    max-width: 600px;
+    max-height: 700px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid #d4af37;
+    height: 50%;
+    padding: 1rem 2rem;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.bankingDetailsCard h2 {
+    color: #d4af37;
+    letter-spacing: 0.12em;
+    margin-bottom: 1.5rem;
+}
+
+.bankingIntro {
+    margin-bottom: 2rem;
+    line-height: 1.8;
+    color: #f5f5f5;
+}
+
+.bankingInfo {
+    margin: 0 auto 3rem auto;
+    max-width: 600px;
+    text-align: left;
+}
+
+.bankingInfo p {
+    margin: 0.9rem 0;
+    line-height: 1.8;
+    color: #f5f5f5;
+}
+
+.donationBlock {
+    border-top: 1px solid rgba(212, 175, 55, 0.4);
+    padding-top: 2rem;
+}
+
+.donationBlock h3 {
+    color: #d4af37;
+    letter-spacing: 0.1em;
+    margin-bottom: 1rem;
+}
+
+.donationBlock p {
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    color: #f5f5f5;
+}
+
+
+@media (max-width: 768px) {
+    .bankingDetailsSection {
+        padding: 4rem 1rem;
+    }
+
+    .bankingDetailsCard {
+        padding: 2rem 1.25rem;
+    }
+
+    .bankingInfo {
+        text-align: left;
+    }
+}

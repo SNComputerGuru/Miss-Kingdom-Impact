@@ -9,7 +9,7 @@ import Blog from "./components/Blog";
 import Journey from "./components/Journey";
 import Partners from "./components/Partners";
 import Events from "./components/Events";
-
+import BankingDetails from "./components/BankingDetails";
 
 export default function App() {
     return (
@@ -23,7 +23,7 @@ export default function App() {
                             <Hero />
                             <Home />
                             <AboutHomeSection />
-
+                            <BankingDetails />
                         </>
                     }
                 />
