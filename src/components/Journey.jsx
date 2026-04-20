@@ -49,8 +49,11 @@ export default function Journey() {
     return (
         <div className="journeyPage">
             <div className="ourJourney">
-                <h2>The MISSKI Journey</h2>
+                <h2>The MISS KI Journey</h2>
 
+                <p className="eventsNote">
+                    Click card to read more...
+                </p>
                 <div className="journeyStack">
                     {journeySteps.map((step, index) => (
                         <div key={index} className="journeyCard">

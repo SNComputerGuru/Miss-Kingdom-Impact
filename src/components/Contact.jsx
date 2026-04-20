@@ -11,6 +11,7 @@ export default function Contact() {
                 <p><strong>Email:</strong> info.misskingdomimpact@gmail.com</p>
                 <p><strong>Social Media:</strong> @misskingdomimpact</p>
                 <p><strong>Location:</strong> Johannesburg, South Africa</p>
+                <p><strong>Phone Number:</strong> 067 989 8916</p>
             </div>
         </section>
     );

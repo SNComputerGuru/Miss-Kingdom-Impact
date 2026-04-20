@@ -8,7 +8,7 @@ import Contact from "./components/Contact";
 import Blog from "./components/Blog";
 import Journey from "./components/Journey";
 import Partners from "./components/Partners";
-import Events from "./components/Events";
+import Outreaches from "./components/Outreaches";
 import BankingDetails from "./components/BankingDetails";
 
 export default function App() {
@@ -32,7 +32,7 @@ export default function App() {
                 <Route path="/blog" element={<Blog />} />
                 <Route path="/journey" element={<Journey />} />
                 <Route path="/partners" element={<Partners />} />
-                <Route path="/events" element={<Events />} />
+                <Route path="/events" element={<Outreaches />} />
             </Routes>
         </Router>
     );

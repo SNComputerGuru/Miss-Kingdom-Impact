@@ -40,14 +40,13 @@ export default function Header() {
                             <div className="dropdownMenu">
                                 <Link to="/journey" onClick={() => setOpen(false)}>THE MKI JOURNEY</Link>
                                 <Link to="/queens" onClick={() => setOpen(false)}>QUEENS</Link>
-                                <Link to="/registration" onClick={() => setOpen(false)}>REGISTRATION</Link>
                                 <Link to="/vote" onClick={() => setOpen(false)}>VOTE</Link>
                             </div>
                         )}
                     </div>
 
-                    <Link to="/events" onClick={() => setOpen(false)}>EVENTS</Link>
-                    <Link to="/gallery" onClick={() => setOpen(false)}>GALLERY</Link>
+                    <Link to="https://docs.google.com/forms/d/e/1FAIpQLSeF-tJ41V94o7BK5_NrVfJ5IA_PfKTYxGVEpElrrxMyBOlOWQ/viewform?fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnCePa8Q_O2BD315GrSa8WGhT-G4qxEijkoCZPBLVFCkQGPQ0OXyH11HYMA2c_aem_tB2KwJXfXu6tKRZ3a3ZOuw" onClick={() => setOpen(false)}>REGISTRATION</Link>
+                    <Link to="/events" onClick={() => setOpen(false)}>OUTREACHES</Link>
                     <Link to="/sponsors" onClick={() => setOpen(false)}>SPONSORS</Link>
                     <Link to="/blog" onClick={() => setOpen(false)}>BLOG</Link>
                     <Link to="/about" onClick={() => setOpen(false)}>ABOUT</Link>
