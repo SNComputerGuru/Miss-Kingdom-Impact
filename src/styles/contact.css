@@ -1,30 +1,80 @@
-.contactSection {
-    width: 100%;
-    min-height: 60vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 4rem 1.5rem;
-    background-color: #0f0f0f;
-    color: white;
+.contactPage {
+    padding: 6rem 2rem;
     text-align: center;
 }
 
-.contactSection h2 {
+.contactWrapper h2 {
     color: #d4af37;
-    font-size: clamp(2rem, 6vw, 3rem);
-    letter-spacing: 0.05em;
-    margin-bottom: 1.5rem;
-    text-shadow: 0 0 10px rgba(0,0,0,0.7);
-}
-
-.contactSection p {
-    font-size: clamp(1rem, 2vw, 1.25rem);
-    line-height: 1.8;
+    letter-spacing: 0.1em;
     margin-bottom: 1rem;
 }
 
-.contactInfo p {
-    margin: 0.5rem 0;
+.h2 {
+    color: #cb0000;
+}
+
+.contactIntro {
+    margin-bottom: 3rem;
+    color: #f5f5f5;
+}
+
+.contactCard {
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid #d4af37;
+    padding: 2rem;
+    background: rgba(212, 175, 55, 0.05);
+    transition: all 0.3s ease;
+    text-align: left;
+}
+
+.contactCard:hover {
+    background: rgba(255, 217, 79, 0.18);
+    transform: translateY(-4px);
+}
+
+.contactRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.contactRow:last-child {
+    border-bottom: none;
+}
+
+.contactRow span {
+    color: #d4af37;
+    font-size: 0.9rem;
+    letter-spacing: 0.08em;
+}
+
+.contactRow p {
+    margin: 0;
+    color: #f5f5f5;
+    text-align: right;
+    max-width: 60%;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+    .contactPage {
+        padding: 4rem 1rem;
+    }
+
+    .contactCard {
+        padding: 1.5rem;
+    }
+
+    .contactRow {
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+
+    .contactRow p {
+        text-align: left;
+        max-width: 100%;
+    }
 }

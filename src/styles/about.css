@@ -1,69 +1,109 @@
-.aboutSection {
-    width: 100%;
-    min-height: 70vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 4rem 1.5rem;
-    background-color: #050505;
-    color: white;
+.aboutPage {
+    padding: 6rem 2rem;
     text-align: center;
 }
 
-.aboutSection h2 {
+.aboutWrapper h2 {
     color: #d4af37;
-    font-size: clamp(2rem, 6vw, 3.5rem);
-    letter-spacing: 0.05em;
-    margin-bottom: 1.5rem;
-    text-shadow: 0 0 10px rgba(0,0,0,0.7);
-}
-
-.aboutSection p {
-    max-width: 800px;
-    font-size: clamp(1rem, 2vw, 1.25rem);
-    line-height: 1.8;
-    margin-bottom: 1rem;
-    color: white;
-}
-
-.values p {
-    margin: 0.5rem 0;
-    font-weight: 600;
-    font-size: 1.2rem;
-    color: #ffffff;
-}
-
-.aboutBlock {
-    margin: 2rem 0;
-}
-
-.ourStory {
-    background-color: #0c0c0c;
-}
-
-.ourMission {
-    background-color: #0c0c0c;
-}
-
-/*----------------*/
-
-.foundersMessage {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 4rem 2rem;
-    line-height: 1.9;
-    font-size: 1.05rem;
-    background-color: #0c0c0c;
-
-}
-
-.foundersMessage h2 {
-    color: #d4af37;
-    margin-bottom: 2rem;
     letter-spacing: 0.1em;
+    margin-bottom: 3rem;
 }
 
-.foundersMessage p {
+.aboutStack {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.aboutCard {
+    border: 1px solid #d4af37;
+    padding: 2rem 3rem;
+    background: rgba(212, 175, 55, 0.05);
+    transition: all 0.3s ease;
+    text-align: left;
+}
+
+.aboutCard:hover {
+    background: rgba(255, 217, 79, 0.18);
+    transform: translateY(-4px);
+}
+
+.aboutCard h3 {
+    color: #d4af37;
+    margin-bottom: 1rem;
+    letter-spacing: 0.08em;
+    font-size: 1rem;
+}
+
+.aboutContent p {
+    line-height: 1.7;
+    font-size: 0.95rem;
+    color: #f5f5f5;
+    margin-bottom: 1rem;
+}
+
+.aboutContent p:last-child {
+    margin-bottom: 0;
+}
+
+.aboutValues {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.aboutValues p {
+    border: 1px solid #d4af37;
+    padding: 0.8rem 1.2rem;
+    background: rgba(212, 175, 55, 0.08);
+    margin: 0;
+    letter-spacing: 0.08em;
+}
+
+.foundersMessageBlock .emailIntro {
     margin-bottom: 1.5rem;
+}
+
+.foundersMessageBlock .signature {
+    margin-top: 2rem;
+    line-height: 1.7;
+}
+.aboutContent {
+    white-space: pre-line;
+}
+
+@media (max-width: 768px) {
+    .aboutWrapper {
+        padding-top: 6rem;
+    }
+    .aboutContent {
+        white-space: pre-line;
+    }
+    .aboutPage {
+        padding: 4rem 1rem;
+    }
+
+    .aboutCard {
+        padding: 1.5rem 1.2rem;
+    }
+
+    .aboutCard h3 {
+        font-size: 0.95rem;
+    }
+
+    .aboutContent p {
+        font-size: 0.9rem;
+    }
+
+    .aboutValues {
+        gap: 0.8rem;
+    }
+
+    .aboutValues p {
+        width: 100%;
+        text-align: center;
+    }
 }
