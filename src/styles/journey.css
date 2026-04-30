@@ -61,3 +61,21 @@
         font-size: 0.9rem;
     }
 }
+
+/*=========================*/
+.journeyButton {
+    display: inline-block;
+    margin-top: 1.5rem;
+    border: 1px solid #d4af37;
+    color: #d4af37;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    letter-spacing: 0.12em;
+    font-size: 0.8rem;
+    transition: all 0.3s ease;
+}
+
+.journeyButton:hover {
+    background: #d4af37;
+    color: #000;
+}

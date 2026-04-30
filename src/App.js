@@ -10,6 +10,7 @@ import Journey from "./components/Journey";
 import Partners from "./components/Partners";
 import Outreaches from "./components/Outreaches";
 import BankingDetails from "./components/BankingDetails";
+import Sponsors from "./components/Sponsors";
 
 export default function App() {
     return (
@@ -33,6 +34,7 @@ export default function App() {
                 <Route path="/journey" element={<Journey />} />
                 <Route path="/partners" element={<Partners />} />
                 <Route path="/events" element={<Outreaches />} />
+                <Route path="/sponsors" element={<Sponsors />} />
             </Routes>
         </Router>
     );
