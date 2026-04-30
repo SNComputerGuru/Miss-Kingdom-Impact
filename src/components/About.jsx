@@ -8,7 +8,7 @@ export default function About() {
                 <>
                     <p>
                         Miss Kingdom Impact is more than a beauty pageant; it is an NPO that celebrates purpose,
-                        leadership, and service. <br></br>
+                        leadership, and service. <br />
                         Founded on the belief that true beauty shines brightest when paired
                         with purpose, the pageant empowers young women to become confident leaders,
                         compassionate changemakers, and ambassadors for positive transformation in their
@@ -103,12 +103,22 @@ export default function About() {
     return (
         <section className="aboutPage">
             <div className="aboutWrapper">
-                <h2 className="aboutMissKingdomImpact">About Miss Kingdom Impact</h2>
+                <h2 className="aboutMissKingdomImpact">
+                    About Miss Kingdom Impact
+                </h2>
 
                 <div className="aboutStack">
                     {aboutCards.map((card, index) => (
-                        <div key={index} className="aboutCard">
+                        <div
+                            key={index}
+                            className={
+                                card.title === "Founder's Message"
+                                    ? "founderLetterCard"
+                                    : "aboutCard"
+                            }
+                        >
                             <h3>{card.title}</h3>
+
                             <div className="aboutContent">
                                 {card.content}
                             </div>
