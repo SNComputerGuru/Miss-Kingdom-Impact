@@ -1,35 +1,27 @@
 import "../styles/sponsors.css";
-
+import shillingHoldingsLogo from "../assets/ShillingHoldingsLogo.png"
+import mkoveredLogo from "../assets/MKOVERED.png";
 export default function Sponsors() {
     const sponsors = [
         {
-            name: "Sponsor One",
-            logo: "/sponsors/sponsor-one.png",
-            description: "Short description of what Sponsor One does.",
+            name: "MKOVERED",
+            logo: mkoveredLogo,
+            description: "Founded in Johannesburg, MKovered blends faith, modesty, and elegance. Each garment is crafted to reflect inner beauty and outer grace—timeless pieces designed with prayer, quality, and love.",
             socials: {
-                instagram: "https://instagram.com/",
-                facebook: "https://facebook.com/",
-                website: "https://example.com"
+                instagram: "https://www.instagram.com/mkovered",
+                facebook: "https://www.facebook.com/profile.php?id=61573685291864",
+                website: "https://www.mkovered.co.za"
             }
         },
         {
-            name: "Sponsor Two",
-            logo: "/sponsors/sponsor-two.png",
-            description: "Short description of what Sponsor Two does.",
+            name: "Shilling Holdings",
+            logo: shillingHoldingsLogo,
+            description: "Shilling Holdings is a creative media brand specializing in photography and visual storytelling" +
+                ". Offering services for events, portraits, and special occasions.",
             socials: {
-                instagram: "https://instagram.com/",
-                facebook: "https://facebook.com/",
-                website: "https://example.com"
-            }
-        },
-        {
-            name: "Sponsor Three",
-            logo: "/sponsors/sponsor-three.png",
-            description: "Short description of what Sponsor Three does.",
-            socials: {
-                instagram: "https://instagram.com/",
-                facebook: "https://facebook.com/",
-                website: "https://example.com"
+                instagram: "https://www.instagram.com/shillingholdings/",
+                facebook: "https://www.facebook.com/shilling.ndivholisious/",
+                website: "https://shillingholdings.wordpress.com/"
             }
         }
     ];

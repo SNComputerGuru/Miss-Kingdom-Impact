@@ -25,6 +25,7 @@ export default function App() {
                             <Home />
                             <AboutHomeSection />
                             <BankingDetails />
+                            <Contact />
                         </>
                     }
                 />
