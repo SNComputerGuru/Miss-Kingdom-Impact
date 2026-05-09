@@ -14,7 +14,7 @@ import Sponsors from "./components/Sponsors";
 
 export default function App() {
     return (
-        <Router basename="/miss-kingdom-impact">
+        <Router>
             <Header />
             <Routes>
                 <Route
