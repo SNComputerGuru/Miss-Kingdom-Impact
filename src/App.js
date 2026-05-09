@@ -1,4 +1,6 @@
+import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -12,10 +14,43 @@ import Outreaches from "./components/Outreaches";
 import BankingDetails from "./components/BankingDetails";
 import Sponsors from "./components/Sponsors";
 
+import heroImage from "./assets/hero.png";
+
+import "./App.css";
+
 export default function App() {
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        const img = new Image();
+
+        img.src = heroImage;
+
+        img.onload = () => {
+            setLoading(false);
+        };
+
+        img.onerror = () => {
+            setLoading(false);
+        };
+    }, []);
+
+    if (loading) {
+        return (
+            <div className="siteLoader">
+                <div className="siteLoaderInner">
+                    <span className="siteLoaderMark">✦</span>
+                    <h1>MISS KINGDOM IMPACT</h1>
+                    <p>Loading...</p>
+                </div>
+            </div>
+        );
+    }
+
     return (
         <Router>
             <Header />
+
             <Routes>
                 <Route
                     path="/"
@@ -29,6 +64,7 @@ export default function App() {
                         </>
                     }
                 />
+
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/blog" element={<Blog />} />
