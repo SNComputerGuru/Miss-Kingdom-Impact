@@ -1,5 +1,7 @@
 import React from "react";
 import "../styles/partners.css";
+// import BankingDetails from "../components/BankingDetails";
+
 import { Link } from "react-router-dom";
 
 export default function Partners() {
@@ -24,8 +26,8 @@ export default function Partners() {
 
             <div className="partnersButtons">
                 <Link to="https://wa.link/15uxbr" className="partnersButton">Become a Sponsor</Link>
-                <Link to="/volunteer" className="partnersButton">Volunteer</Link>
-                <Link to="/donate" className="partnersButton">Donate</Link>
+                <Link to="https://docs.google.com/forms/d/e/1FAIpQLSfTaEuqY18ii_7m7UPrXqFyav-tcJrThri1V_trCWmuSwj4cw/viewform" className="partnersButton">Volunteer</Link>
+                <Link to="/bankingdetails" className="partnersButton">Donate</Link>
             </div>
         </section>
     );

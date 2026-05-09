@@ -72,6 +72,7 @@ export default function App() {
                 <Route path="/partners" element={<Partners />} />
                 <Route path="/events" element={<Outreaches />} />
                 <Route path="/sponsors" element={<Sponsors />} />
+                <Route path="/bankingdetails" element={<BankingDetails />} />
             </Routes>
         </Router>
     );
