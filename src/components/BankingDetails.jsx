@@ -13,7 +13,7 @@ export default function BankingDetails() {
 
                 <div className="bankingInfo">
                     <p><strong>Bank:</strong> FNB</p>
-                    <p><strong>Holder:</strong> MISS KINGDOM IMPACT NPC</p>
+                    <p><strong>Holder:</strong> MISS KINGDOM IMPACT NPO</p>
                     <p><strong>Account No.:</strong> 63205389017</p>
                     <p><strong>Branch Code:</strong> 251905</p>
                     {/*<p><strong>Reference:</strong> Initials, Surname (Example – AB Joe)</p>*/}
