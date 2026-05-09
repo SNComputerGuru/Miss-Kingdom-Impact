@@ -23,7 +23,7 @@ export default function Partners() {
             </p>
 
             <div className="partnersButtons">
-                <Link to="/sponsor" className="partnersButton">Become a Sponsor</Link>
+                <Link to="https://wa.link/15uxbr" className="partnersButton">Become a Sponsor</Link>
                 <Link to="/volunteer" className="partnersButton">Volunteer</Link>
                 <Link to="/donate" className="partnersButton">Donate</Link>
             </div>

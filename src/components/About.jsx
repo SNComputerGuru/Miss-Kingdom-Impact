@@ -7,7 +7,7 @@ export default function About() {
             content: (
                 <>
                     <p>
-                        Miss Kingdom Impact is more than a beauty pageant; it is an NPO that celebrates purpose,
+                        Miss Kingdom Impact is more than a beauty pageant; it is an NPC that celebrates purpose,
                         leadership, and service. <br />
                         Founded on the belief that true beauty shines brightest when paired
                         with purpose, the pageant empowers young women to become confident leaders,
