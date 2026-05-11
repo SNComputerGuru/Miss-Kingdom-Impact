@@ -1,5 +1,5 @@
 import "../styles/hero.css";
-import heroImage from "../assets/_MG_2432.png";
+const heroImage = "https://ik.imagekit.io/yq17ihow7e/New%20Folder/_MG_2432.png";
 
 export default function Hero() {
     return (
