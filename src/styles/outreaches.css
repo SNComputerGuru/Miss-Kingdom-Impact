@@ -1,50 +1,318 @@
-.eventsPage {
-    padding: 6rem 2rem;
+.outreachesPage {
+    min-height: 100vh;
+    background:
+            radial-gradient(circle at top, rgba(212, 175, 55, 0.14), transparent 34%),
+            linear-gradient(180deg, #050505 0%, #111111 42%, #000000 100%);
+    color: #f8f1dc;
+    padding: 8rem 6vw 5rem;
+}
+
+.outreachesHero {
+    max-width: 920px;
+    margin: 0 auto 4.5rem;
     text-align: center;
 }
 
-.ourEvents h2 {
+.outreachesEyebrow {
     color: #d4af37;
-    letter-spacing: 0.1em;
-    margin-bottom: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.28em;
+    font-size: 0.78rem;
+    margin: 0 0 1rem;
 }
 
-.eventsGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 2rem;
-    max-width: 1100px;
+.outreachesHero h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(3rem, 8vw, 7rem);
+    font-weight: 400;
+    line-height: 0.95;
+    margin: 0 0 1.4rem;
+}
+
+.outreachesHero p {
+    max-width: 700px;
     margin: 0 auto;
-}
-
-.eventCard {
-    border: 1px solid #d4af37;
-    padding: 2rem 1.5rem;
-    background: rgba(212, 175, 55, 0.05);
-    transition: all 0.3s ease;
-    cursor: pointer;
-    text-align: left;
-}
-
-.eventCard:hover {
-    background: rgba(255, 217, 79, 0.51);
-    transform: translateY(-4px);
-}
-
-.eventCard h3 {
-    color: #d4af37;
-    margin-bottom: 1rem;
-    letter-spacing: 0.08em;
+    color: rgba(248, 241, 220, 0.76);
+    line-height: 1.8;
     font-size: 1rem;
 }
 
-.eventContent {
-    line-height: 1.7;
-    font-size: 0.95rem;
-    color: #f5f5f5;
+.outreachesList {
+    max-width: 1120px;
+    margin: 0 auto;
+    display: grid;
+    gap: 2.2rem;
 }
 
-.eventsNote {
-    margin-top: 3rem;
-    opacity: 0.8;
+.outreachCard {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(212, 175, 55, 0.34);
+    background:
+            linear-gradient(135deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.012)),
+            rgba(0, 0, 0, 0.74);
+    box-shadow: 0 28px 80px rgba(0, 0, 0, 0.48);
+    padding: clamp(1.4rem, 4vw, 3rem);
+}
+
+.outreachCard::before {
+    content: "";
+    position: absolute;
+    inset: 16px;
+    border: 1px solid rgba(212, 175, 55, 0.12);
+    pointer-events: none;
+}
+
+.outreachCard::after {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    right: -120px;
+    top: -120px;
+    background: radial-gradient(circle, rgba(212, 175, 55, 0.12), transparent 66%);
+    pointer-events: none;
+}
+
+.outreachCardTop {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.outreachTitleBlock {
+    max-width: 720px;
+}
+
+.outreachDate {
+    color: #d4af37;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-size: 0.76rem;
+    margin: 0 0 0.75rem;
+}
+
+.outreachCard h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2.2rem, 5vw, 4.8rem);
+    font-weight: 400;
+    line-height: 1;
+    margin: 0;
+}
+
+.outreachReadMore {
+    border: 1px solid rgba(212, 175, 55, 0.72);
+    background: transparent;
+    color: #d4af37;
+    padding: 0.95rem 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-size: 0.72rem;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    white-space: nowrap;
+}
+
+.outreachReadMore:hover {
+    background: #d4af37;
+    color: #000;
+    transform: translateY(-2px);
+}
+
+.outreachSummary {
+    position: relative;
+    z-index: 1;
+    max-width: 760px;
+    color: rgba(248, 241, 220, 0.76);
+    line-height: 1.85;
+    margin: 1.8rem 0 2rem;
+}
+
+.outreachPhotoGrid {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    transition: all 0.35s ease;
+}
+
+.outreachPhotoGridClosed {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.8rem;
+    max-width: 620px;
+}
+
+.outreachPhotoGridOpen {
+    grid-template-columns: 1.2fr 0.8fr 0.8fr;
+    gap: 1rem;
+}
+
+.outreachPhoto {
+    overflow: hidden;
+    border: 1px solid rgba(212, 175, 55, 0.18);
+    background: #111;
+}
+
+.outreachPhotoGridClosed .outreachPhoto {
+    height: 145px;
+}
+
+.outreachPhotoGridOpen .outreachPhoto {
+    min-height: 210px;
+}
+
+.outreachPhotoGridOpen .outreachPhoto:first-child {
+    grid-row: span 2;
+    min-height: 440px;
+}
+
+.outreachPhoto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.92);
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.outreachPhoto:hover img {
+    transform: scale(1.06);
+    filter: brightness(1.08);
+}
+
+.outreachPhotoHint {
+    position: relative;
+    z-index: 1;
+    margin: 1rem 0 0;
+    color: rgba(212, 175, 55, 0.8);
+    font-size: 0.82rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.outreachExpanded {
+    position: relative;
+    z-index: 1;
+    margin-top: 2.4rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(212, 175, 55, 0.22);
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 2rem;
+}
+
+.outreachExpandedLabel {
+    color: #d4af37;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 0.76rem;
+    padding-top: 0.4rem;
+}
+
+.outreachExpandedContent {
+    max-width: 780px;
+    color: rgba(248, 241, 220, 0.84);
+    line-height: 1.9;
+}
+
+.outreachExpandedContent p {
+    margin: 0 0 1.2rem;
+}
+
+@media (max-width: 900px) {
+    .outreachesPage {
+        padding: 6.5rem 5vw 4rem;
+    }
+
+    .outreachCardTop {
+        flex-direction: column;
+        gap: 1.4rem;
+    }
+
+    .outreachReadMore {
+        width: 100%;
+    }
+
+    .outreachPhotoGridClosed {
+        max-width: 100%;
+    }
+
+    .outreachPhotoGridClosed .outreachPhoto {
+        height: 120px;
+    }
+
+    .outreachPhotoGridOpen {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .outreachPhotoGridOpen .outreachPhoto:first-child {
+        grid-column: span 2;
+        grid-row: auto;
+        min-height: 320px;
+    }
+
+    .outreachPhotoGridOpen .outreachPhoto {
+        min-height: 190px;
+    }
+
+    .outreachExpanded {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 560px) {
+    .outreachesPage {
+        padding: 6rem 1rem 3.5rem;
+    }
+
+    .outreachesHero {
+        margin-bottom: 3rem;
+    }
+
+    .outreachesHero p {
+        font-size: 0.95rem;
+    }
+
+    .outreachCard {
+        padding: 1.35rem;
+    }
+
+    .outreachCard::before {
+        inset: 10px;
+    }
+
+    .outreachPhotoGridClosed {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.45rem;
+    }
+
+    .outreachPhotoGridClosed .outreachPhoto {
+        height: 86px;
+    }
+
+    .outreachPhotoGridOpen {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+
+    .outreachPhotoGridOpen .outreachPhoto:first-child {
+        grid-column: span 1;
+        min-height: 280px;
+    }
+
+    .outreachPhotoGridOpen .outreachPhoto {
+        min-height: 230px;
+    }
+
+    .outreachSummary {
+        margin: 1.4rem 0 1.6rem;
+    }
+
+    .outreachExpanded {
+        margin-top: 2rem;
+        padding-top: 1.5rem;
+    }
 }
