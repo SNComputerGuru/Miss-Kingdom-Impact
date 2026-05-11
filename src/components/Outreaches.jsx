@@ -1,15 +1,6 @@
 import { useState } from "react";
 import "../styles/outreaches.css";
 
-import foodDriveOne from "../assets/outreaches/food-drive-1.jpeg";
-import foodDriveTwo from "../assets/outreaches/food-drive-2.jpeg";
-import foodDriveThree from "../assets/outreaches/food-drive-3.jpeg";
-import foodDriveFour from "../assets/outreaches/food-drive-4.jpeg";
-import foodDriveFive from "../assets/outreaches/food-drive-5.jpeg";
-import foodDriveSix from "../assets/outreaches/food-drive-6.jpeg";
-import foodDriveSeven from "../assets/outreaches/food-drive-7.jpeg";
-import foodDriveEight from "../assets/outreaches/food-drive-8.jpeg";
-
 export default function Outreaches() {
     const [openCard, setOpenCard] = useState(null);
 
@@ -18,7 +9,7 @@ export default function Outreaches() {
             title: "Food Drive",
             date: "16 Dec 2025",
             summary:
-                "A Kingdom impact outreach dedicated to serving individuals through food support, compassion, and community care.",
+                "A Kingdom impact outreach dedicated to serving families and individuals through food support, compassion, and community care.",
             content: (
                 <>
                     <p>
@@ -38,14 +29,14 @@ export default function Outreaches() {
                 </>
             ),
             photos: [
-                foodDriveOne,
-                foodDriveTwo,
-                foodDriveThree,
-                foodDriveFour,
-                foodDriveFive,
-                foodDriveSix,
-                foodDriveSeven,
-                foodDriveEight
+                "https://ik.imagekit.io/yq17ihow7e/food-drive-1.jpeg",
+                "https://ik.imagekit.io/yq17ihow7e/food-drive-2.jpeg",
+                "https://ik.imagekit.io/yq17ihow7e/food-drive-3.jpeg",
+                "https://ik.imagekit.io/yq17ihow7e/food-drive-4.jpeg",
+                "https://ik.imagekit.io/yq17ihow7e/food-drive-5.jpeg",
+                "https://ik.imagekit.io/yq17ihow7e/food-drive-6.jpeg",
+                "https://ik.imagekit.io/yq17ihow7e/food-drive-7.jpeg",
+                "https://ik.imagekit.io/yq17ihow7e/food-drive-8.jpeg"
             ]
         }
     ];
@@ -105,10 +96,11 @@ export default function Outreaches() {
                                 }
                             >
                                 {visiblePhotos.map((photo, photoIndex) => (
-                                    <div className="outreachPhoto" key={photoIndex}>
+                                    <div className="outreachPhoto" key={`${outreach.title}-${photoIndex}`}>
                                         <img
                                             src={photo}
                                             alt={`${outreach.title} ${photoIndex + 1}`}
+                                            loading={photoIndex === 0 ? "eager" : "lazy"}
                                         />
                                     </div>
                                 ))}
