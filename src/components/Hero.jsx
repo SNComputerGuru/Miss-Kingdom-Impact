@@ -1,10 +1,8 @@
 import "../styles/hero.css";
-const heroImage = "https://ik.imagekit.io/yq17ihow7e/New%20Folder/_MG_2432.png";
 
-export default function Hero() {
+export default function Hero({ heroImage }) {
     return (
         <section className="hero">
-
             <div className="heroOverlay"></div>
 
             <img
@@ -16,7 +14,6 @@ export default function Hero() {
             <div className="heroContent">
                 <h1>MISS KINGDOM IMPACT</h1>
             </div>
-
         </section>
     );
 }

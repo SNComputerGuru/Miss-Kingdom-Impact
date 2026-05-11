@@ -14,9 +14,9 @@ import Outreaches from "./components/Outreaches";
 import BankingDetails from "./components/BankingDetails";
 import Sponsors from "./components/Sponsors";
 
-import heroImage from "./assets/hero.png";
-
 import "./App.css";
+
+const heroImage = "https://ik.imagekit.io/yq17ihow7e/New%20Folder/_MG_2432.png";
 
 export default function App() {
     const [loading, setLoading] = useState(true);
@@ -56,7 +56,7 @@ export default function App() {
                     path="/"
                     element={
                         <>
-                            <Hero />
+                            <Hero heroImage={heroImage} />
                             <Home />
                             <AboutHomeSection />
                             <BankingDetails />
