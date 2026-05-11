@@ -1,6 +1,7 @@
 import "../styles/sponsors.css";
-import shillingHoldingsLogo from "../assets/ShillingHoldingsLogo.png"
-import mkoveredLogo from "../assets/MKOVERED.png";
+const shillingHoldingsLogo = "https://ik.imagekit.io/yq17ihow7e/New%20Folder/ShillingHoldingsLogo.png"
+const mkoveredLogo = "https://ik.imagekit.io/yq17ihow7e/New%20Folder/MKOVERED.png";
+
 export default function Sponsors() {
     const sponsors = [
         {
