@@ -9,22 +9,19 @@ export default function Outreaches() {
             title: "Food Drive",
             date: "16 Dec 2025",
             summary:
-                "A Kingdom impact outreach dedicated to serving families and individuals through food support, compassion, and community care.",
+                "The outreach focused on sharing food items with those in need, while spreading the word of God and encouragement to families and individuals.",
             content: (
                 <>
                     <p>
-                        The Food Drive was one of the first outreach initiatives by Miss Kingdom Impact,
-                        created to extend love, dignity, and practical support to members of the community.
+                        A look into the community initiatives, service moments, and purpose-driven work led by Miss Kingdom Impact.
                     </p>
 
                     <p>
-                        Through this initiative, the brand demonstrated that pageantry is not only about
-                        elegance and crowns, but also about service, generosity, and meaningful impact.
+                        One of the core pillars of Miss Kingdom impact is Impact/Service. We believe that as Ambassadors of Christ, our lives should be ones of service and love.
                     </p>
 
                     <p>
-                        The outreach focused on sharing food items with those in need, while creating a
-                        moment of care, hope, and encouragement for families during the festive season.
+                        The Food Drive was one of the first outreach initiatives, created to extend love, dignity, and practical support to members of the community.
                     </p>
                 </>
             ),
