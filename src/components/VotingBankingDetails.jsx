@@ -6,7 +6,7 @@ export default function VotingBankingDetails({ finalistCode }) {
 
                 <div className="bankingInfo">
                     <p>
-                        <strong>Bank:</strong> BankName
+                        <strong>Bank:</strong> FNB
                     </p>
 
                     <p>
@@ -14,11 +14,11 @@ export default function VotingBankingDetails({ finalistCode }) {
                     </p>
 
                     <p>
-                        <strong>Account Number:</strong> 45668618
+                        <strong>Account Number:</strong> 63205389017
                     </p>
 
                     <p>
-                        <strong>Branch Code:</strong> 84891681
+                        <strong>Branch Code:</strong> 251905
                     </p>
 
                     <p>
