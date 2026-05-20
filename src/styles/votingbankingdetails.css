@@ -1,0 +1,51 @@
+.bankingDetailsSection {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 0;
+}
+
+.bankingDetailsCard {
+    width: 100%;
+    max-width: 520px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    padding: 1.8rem;
+    color: #f8f3e7;
+    backdrop-filter: blur(10px);
+}
+
+.bankingDetailsCard h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 0.14em;
+    color: #d4af37;
+    margin-bottom: 1.2rem;
+    font-family: Georgia, serif;
+    text-transform: uppercase;
+}
+
+.bankingIntro {
+    display: none;
+}
+
+.bankingInfo {
+    display: grid;
+    gap: 0.9rem;
+}
+
+.bankingInfo p {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    font-size: 0.9rem;
+}
+
+.bankingInfo strong {
+    color: #d4af37;
+    font-weight: 500;
+}
+
+.donationBlock {
+    display: none;
+}

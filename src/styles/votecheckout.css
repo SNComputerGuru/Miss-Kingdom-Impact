@@ -1,0 +1,280 @@
+.voteCheckoutPage {
+    min-height: 100vh;
+    padding: 8rem 6vw 6rem;
+    background:
+            radial-gradient(circle at top, rgba(212, 175, 55, 0.08), transparent 32%),
+            linear-gradient(180deg, #040404 0%, #0d0d0d 45%, #000000 100%);
+    color: #f8f3e7;
+}
+
+.voteCheckoutCard {
+    max-width: 1350px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(212, 175, 55, 0.16);
+    overflow: hidden;
+    backdrop-filter: blur(12px);
+}
+
+.voteCheckoutLeft {
+    background: #070707;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.voteCheckoutImage {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.voteCheckoutImage img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-height: 900px;
+    display: block;
+}
+
+.voteCheckoutRight {
+    padding: clamp(2rem, 5vw, 5rem);
+}
+
+.voteCheckoutEyebrow {
+    color: #d4af37;
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    font-size: 0.74rem;
+    margin-bottom: 1rem;
+}
+
+.voteCheckoutRight h1 {
+    font-size: clamp(3rem, 6vw, 5.5rem);
+    line-height: 0.92;
+    font-weight: 400;
+    margin-bottom: 2.5rem;
+    font-family: Georgia, serif;
+}
+
+.voteInfoBlock {
+    margin-bottom: 2.5rem;
+}
+
+.voteInfoBlock span {
+    display: block;
+    color: rgba(248, 243, 231, 0.58);
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-size: 0.72rem;
+    margin-bottom: 0.7rem;
+}
+
+.voteInfoBlock strong {
+    color: #d4af37;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.voteField {
+    margin-bottom: 2.5rem;
+}
+
+.voteField label {
+    display: block;
+    margin-bottom: 1rem;
+    letter-spacing: 0.08em;
+    color: rgba(248, 243, 231, 0.84);
+}
+
+.voteField select {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(212, 175, 55, 0.18);
+    color: #f8f3e7;
+    padding: 1.1rem;
+    font-size: 1rem;
+    outline: none;
+}
+
+.voteSummary {
+    border-top: 1px solid rgba(212, 175, 55, 0.14);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.14);
+    padding: 1.8rem 0;
+    margin-bottom: 2.5rem;
+}
+
+.voteSummary p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 1rem;
+}
+
+.voteSummary p:last-child {
+    margin-bottom: 0;
+}
+
+.voteSummary span {
+    color: rgba(248, 243, 231, 0.65);
+}
+
+.voteSummary strong {
+    color: #d4af37;
+    font-weight: 500;
+}
+
+.paymentMethods {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.paymentMethods button {
+    background: transparent;
+    border: 1px solid rgba(212, 175, 55, 0.18);
+    color: #f8f3e7;
+    padding: 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    transition:
+            border-color 0.35s ease,
+            background 0.35s ease,
+            color 0.35s ease;
+}
+
+.paymentMethods button:hover {
+    border-color: rgba(212, 175, 55, 0.45);
+}
+
+.paymentActive {
+    background: #d4af37 !important;
+    color: #000 !important;
+    border-color: #d4af37 !important;
+}
+
+.paymentPanel {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(212, 175, 55, 0.14);
+    padding: 2rem;
+}
+
+.paymentPanel p {
+    color: rgba(248, 243, 231, 0.72);
+    line-height: 1.8;
+}
+
+.paymentButton {
+    width: 100%;
+    margin-top: 1.5rem;
+    padding: 1.1rem;
+    background: #d4af37;
+    border: none;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    cursor: pointer;
+    transition:
+            transform 0.35s ease,
+            opacity 0.35s ease;
+}
+
+.paymentButton:hover {
+    transform: translateY(-2px);
+    opacity: 0.92;
+}
+
+.bankPanel h3 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: 400;
+    font-family: Georgia, serif;
+}
+
+.bankGrid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.bankGrid p {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.bankGrid span {
+    color: rgba(248, 243, 231, 0.55);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.7rem;
+}
+
+.bankGrid strong {
+    color: #d4af37;
+    font-weight: 500;
+}
+
+@media (max-width: 980px) {
+    .voteCheckoutCard {
+        grid-template-columns: 1fr;
+    }
+
+    .voteCheckoutLeft {
+        padding: 1.5rem;
+    }
+
+    .voteCheckoutImage img {
+        max-height: 650px;
+    }
+}
+
+@media (max-width: 768px) {
+    .voteCheckoutPage {
+        padding: 7rem 1.5rem 5rem;
+    }
+
+    .paymentMethods {
+        grid-template-columns: 1fr;
+    }
+
+    .voteCheckoutRight h1 {
+        font-size: 3rem;
+    }
+
+    .voteCheckoutImage img {
+        max-height: 520px;
+    }
+}
+
+/*========================*/
+.voteField select {
+    width: 100%;
+    background: #0b0b0b;
+    border: 1px solid rgba(212, 175, 55, 0.35);
+    color: #d4af37;
+    padding: 1.1rem;
+    font-size: 1rem;
+    outline: none;
+    cursor: pointer;
+
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.voteField select option {
+    background: #0b0b0b;
+    color: #d4af37;
+}
+
+.voteField select:focus {
+    border-color: #d4af37;
+    box-shadow: 0 0 0 1px rgba(212, 175, 55, 0.25);
+}
