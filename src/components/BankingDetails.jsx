@@ -16,7 +16,6 @@ export default function BankingDetails() {
                     <p><strong>Holder:</strong> MISS KINGDOM IMPACT NPC</p>
                     <p><strong>Account No.:</strong> 63205389017</p>
                     <p><strong>Branch Code:</strong> 251905</p>
-                    {/*<p><strong>Reference:</strong> Initials, Surname (Example – AB Joe)</p>*/}
                 </div>
 
                 <div className="donationBlock">

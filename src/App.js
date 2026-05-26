@@ -13,6 +13,8 @@ import Partners from "./components/Partners";
 import Outreaches from "./components/Outreaches";
 import BankingDetails from "./components/BankingDetails";
 import Sponsors from "./components/Sponsors";
+import Vote from "./components/Vote";
+import VoteCheckout from "./components/VoteCheckout";
 
 import "./App.css";
 
@@ -72,7 +74,10 @@ export default function App() {
                 <Route path="/partners" element={<Partners />} />
                 <Route path="/events" element={<Outreaches />} />
                 <Route path="/sponsors" element={<Sponsors />} />
+                <Route path="/vote" element={<Vote />} />
+                <Route path="/vote/:contestantId" element={<VoteCheckout />} />
                 <Route path="/bankingdetails" element={<BankingDetails />} />
+
             </Routes>
         </Router>
     );
