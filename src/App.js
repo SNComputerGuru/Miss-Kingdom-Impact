@@ -15,6 +15,8 @@ import BankingDetails from "./components/BankingDetails";
 import Sponsors from "./components/Sponsors";
 import Vote from "./components/Vote";
 import VoteCheckout from "./components/VoteCheckout";
+import GatewayReturn from "./components/GatewayReturn";
+import Footer from "./components/Footer";
 
 import "./App.css";
 
@@ -77,8 +79,11 @@ export default function App() {
                 <Route path="/vote" element={<Vote />} />
                 <Route path="/vote/:contestantId" element={<VoteCheckout />} />
                 <Route path="/bankingdetails" element={<BankingDetails />} />
+                <Route path="/gateway-return" element={<GatewayReturn />} />
 
             </Routes>
+            <Footer></Footer>
         </Router>
+
     );
 }
