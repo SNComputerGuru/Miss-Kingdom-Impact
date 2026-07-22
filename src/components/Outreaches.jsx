@@ -161,7 +161,7 @@ export default function Outreaches() {
                             {isOpen && (
                                 <div className="outreachExpanded">
                                     <div className="outreachExpandedLabel">
-                                        Outreach Details
+                                        Details
                                     </div>
 
                                     <div className="outreachExpandedContent">
