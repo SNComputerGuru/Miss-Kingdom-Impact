@@ -35,6 +35,55 @@ export default function Outreaches() {
                 "https://ik.imagekit.io/yq17ihow7e/food-drive-7.jpeg",
                 "https://ik.imagekit.io/yq17ihow7e/food-drive-8.jpeg"
             ]
+        },
+        {
+            title: "Welcoming Sash Ceremony",
+            date: "11 Jul 2026",
+            summary:
+                "The Miss Kingdom Impact welcoming sash ceremony is a sacred commissioning moment that officially welcomes and recognises the selected participants as ambassadors of Miss Kingdom Impact.",
+            content: (
+                <>
+                    <p>
+                        The Miss Kingdom Impact welcoming sash ceremony is a sacred commissioning moment that officially welcomes and recognises the selected participants as ambassadors of Miss Kingdom Impact.
+                    </p>
+                </>
+            ),
+            photos: [
+                "https://ik.imagekit.io/yq17ihow7e/Finalists/Sashing%20Ceremony/_MG_2301.jpg",
+                "https://ik.imagekit.io/yq17ihow7e/Finalists/Sashing%20Ceremony/_MG_2470.jpg",
+                "https://ik.imagekit.io/yq17ihow7e/Finalists/Sashing%20Ceremony/_MG_2625.jpg",
+                "https://ik.imagekit.io/yq17ihow7e/Finalists/Sashing%20Ceremony/_MG_1933.jpg",
+                "https://ik.imagekit.io/yq17ihow7e/Finalists/Sashing%20Ceremony/_MG_2015.jpg",
+                "https://ik.imagekit.io/yq17ihow7e/Finalists/Sashing%20Ceremony/_MG_2602.jpg",
+                "https://ik.imagekit.io/yq17ihow7e/Finalists/Sashing%20Ceremony/_MG_2005.jpg",
+                "https://ik.imagekit.io/yq17ihow7e/Finalists/Sashing%20Ceremony/_MG_2622.jpg",
+
+                "https://ik.imagekit.io/yq17ihow7e/Finalists/Sashing%20Ceremony/_MG_1894.jpg",
+                "https://ik.imagekit.io/yq17ihow7e/Finalists/Sashing%20Ceremony/_MG_2001.jpg",
+                "https://ik.imagekit.io/yq17ihow7e/Finalists/Sashing%20Ceremony/_MG_2021.jpg",
+                "https://ik.imagekit.io/yq17ihow7e/Finalists/Sashing%20Ceremony/_MG_1875.jpg",
+                "https://ik.imagekit.io/yq17ihow7e/Finalists/Sashing%20Ceremony/_MG_1953.jpg",
+                "https://ik.imagekit.io/yq17ihow7e/Finalists/Sashing%20Ceremony/_MG_2138.jpg",
+
+                "https://ik.imagekit.io/yq17ihow7e/Finalists/Sashing%20Ceremony/_MG_1856.jpg",
+                "https://ik.imagekit.io/yq17ihow7e/Finalists/Sashing%20Ceremony/_MG_1957.jpg",
+                "https://ik.imagekit.io/yq17ihow7e/Finalists/Sashing%20Ceremony/_MG_2027.jpg",
+                "https://ik.imagekit.io/yq17ihow7e/Finalists/Sashing%20Ceremony/_MG_1925.jpg",
+                "https://ik.imagekit.io/yq17ihow7e/Finalists/Sashing%20Ceremony/_MG_2208.jpg",
+                "https://ik.imagekit.io/yq17ihow7e/Finalists/Sashing%20Ceremony/_MG_2178.jpg",
+
+                "https://ik.imagekit.io/yq17ihow7e/Finalists/Sashing%20Ceremony/_MG_1882.jpg",
+                "https://ik.imagekit.io/yq17ihow7e/Finalists/Sashing%20Ceremony/_MG_1917.jpg",
+                "https://ik.imagekit.io/yq17ihow7e/Finalists/Sashing%20Ceremony/_MG_1907.jpg",
+                "https://ik.imagekit.io/yq17ihow7e/Finalists/Sashing%20Ceremony/_MG_1914.jpg",
+                "https://ik.imagekit.io/yq17ihow7e/Finalists/Sashing%20Ceremony/_MG_1886.jpg",
+                "https://ik.imagekit.io/yq17ihow7e/Finalists/Sashing%20Ceremony/_MG_1881.jpg",
+
+                "https://ik.imagekit.io/yq17ihow7e/Finalists/Sashing%20Ceremony/_MG_2009.jpg",
+                "https://ik.imagekit.io/yq17ihow7e/Finalists/Sashing%20Ceremony/_MG_2140.jpg",
+                "https://ik.imagekit.io/yq17ihow7e/Finalists/Sashing%20Ceremony/_MG_2456.jpg",
+                "https://ik.imagekit.io/yq17ihow7e/Finalists/Sashing%20Ceremony/_MG_1977.jpg"
+            ]
         }
     ];
 

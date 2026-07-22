@@ -68,7 +68,6 @@ export default function App() {
                         </>
                     }
                 />
-
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/blog" element={<Blog />} />
@@ -80,10 +79,8 @@ export default function App() {
                 <Route path="/vote/:contestantId" element={<VoteCheckout />} />
                 <Route path="/bankingdetails" element={<BankingDetails />} />
                 <Route path="/gateway-return" element={<GatewayReturn />} />
-
             </Routes>
-            <Footer></Footer>
+            <Footer />
         </Router>
-
     );
 }
