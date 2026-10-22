@@ -1,3 +1,10 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Allow: /
+
+# Payment and checkout pages should not appear in search results
+Disallow: /api/
+Disallow: /payfast-webhook
+Disallow: /gateway-return
+
+Sitemap: https://misskingdomimpact.co.za/sitemap.xml
